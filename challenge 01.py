@@ -9,28 +9,21 @@ hrstotal = (mintotal/60)
 hrsint = (mintotal//60)
 hrfinal = hrsint-12
 mindec = (hrstotal-hrsint)
-minfinal = mindec*60
-if hrfinal >= 12:
-    hrfinal = hrfinal-12
-else:
-    print(f"{hrfinal}:{minfinal:.0f}h")
-if hrfinal >= 12:
-    hrfinal = hrfinal-12
-else:
-    print(f"{hrfinal}:{minfinal:.0f}h")
-if hrfinal >= 12:
-    hrfinal = hrfinal-12
-else:
-    print(f"{hrfinal}:{minfinal:.0f}h")
-
-
-print(f"{hr1min} hr1min")
-print(f"{hr2min} hr2min")
-print(f"{mintotal} mintotal")
-print(f"{hrstotal} hrstotal")
-print(f"{hrsint} hrsint")
-print(f"{hrfinal} hrfinal")
-print(f"{mindec} teste")
-print(f"{minfinal:.0f} teste2")
+minfinal = mindec * 60
 print(" ")
-print(f"{hrfinal}:{minfinal:.0f}h")
+if hrfinal >= 12:
+    hrfinal = hrfinal-12
+else:
+    hrfinal = hrfinal+0
+if hrfinal >= 12:
+    hrfinal = hrfinal-12
+else:
+    hrfinal = hrfinal+0
+if hrfinal >= 12:
+    hrfinal = hrfinal-12
+else:
+    hrfinal = hrfinal+0
+if minfinal >= 10:
+    print(f"{hrfinal:02d}:{minfinal:.0f}h")
+else:
+    print(f"{hrfinal:02d}:0{minfinal:.0f}h")
