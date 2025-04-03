@@ -23,6 +23,10 @@ if hrfinal >= 12:
     hrfinal = hrfinal-12
 else:
     hrfinal = hrfinal+0
+if hrfinal < 0:
+    hrfinal = hrfinal +12
+else:
+    hrfinal = hrfinal+0
 if minfinal >= 10:
     print(f"{hrfinal:02d}:{minfinal:.0f}h")
 else:
