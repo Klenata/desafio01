@@ -1,0 +1,6 @@
+hr1 = int(input("Digite a primeira hora: "))
+min1 = int(input("Digite o primeiro minuto: "))
+hr2 = int(input("Digite a segunda hora: "))
+min2 = int(input("Digite o segundo minuto: "))
+minutostotais = (hr1*60+hr2*60+min1+min2)
+print(f"{minutostotais // 60 % 12:02d}:{minutostotais % 60:02d}")
