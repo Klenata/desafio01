@@ -1,16 +1,33 @@
-entrada01hr = 21
-entrada01min = 30
-entrada02hr = 21
-entrada02min = 30
+entrada01hr = int(input("Digite a primeira hora: "))
+entrada01min = int(input("Digite o primeiro minuto: "))
+entrada02hr = int(input("Digite a segunda hora: "))
+entrada02min = int(input("Digite o segundo minuto: "))
 hr1min = entrada01hr*60
 hr2min = entrada02hr*60
 mintotal = (hr1min+hr2min+entrada01min+entrada02min)
 hrstotal = (mintotal/60)
 hrsint = (mintotal//60)
 hrfinal = hrsint-12
-teste = (hrstotal-hrsint)
-teste2 = teste*60
-if hrfinal > 12:
-    print(f"{hrfinal-12}:{teste2:.0f}")
+mindec = (hrstotal-hrsint)
+minfinal = mindec * 60
+print(" ")
+if hrfinal >= 12:
+    hrfinal = hrfinal-12
 else:
-    print(f"{hrfinal}:{teste2:.0f}")
+    hrfinal = hrfinal+0
+if hrfinal >= 12:
+    hrfinal = hrfinal-12
+else:
+    hrfinal = hrfinal+0
+if hrfinal >= 12:
+    hrfinal = hrfinal-12
+else:
+    hrfinal = hrfinal+0
+if hrfinal < 0:
+    hrfinal = hrfinal +12
+else:
+    hrfinal = hrfinal+0
+if minfinal >= 10:
+    print(f"{hrfinal:02d}:{minfinal:.0f}h")
+else:
+    print(f"{hrfinal:02d}:0{minfinal:.0f}h")
