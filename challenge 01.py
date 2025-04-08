@@ -1,7 +1,7 @@
 entrada01hr = 21
-entrada01min = 00
+entrada01min = 30
 entrada02hr = 21
-entrada02min = 00
+entrada02min = 30
 hr1min = entrada01hr*60
 hr2min = entrada02hr*60
 mintotal = (hr1min+hr2min+entrada01min+entrada02min)
